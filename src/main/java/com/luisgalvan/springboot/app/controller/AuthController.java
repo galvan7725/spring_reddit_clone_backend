@@ -1,5 +1,6 @@
 package com.luisgalvan.springboot.app.controller;
 
+import com.luisgalvan.springboot.app.dto.AuthenticationResponse;
 import com.luisgalvan.springboot.app.dto.LoginRequest;
 import com.luisgalvan.springboot.app.dto.RegisterRequest;
 import com.luisgalvan.springboot.app.service.AuthService;
@@ -28,8 +29,8 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public void login(@RequestBody LoginRequest loginRequest){
-     authService.login(loginRequest);
+    public AuthenticationResponse login(@RequestBody LoginRequest loginRequest){
+     return authService.login(loginRequest);
     }
 
 }
