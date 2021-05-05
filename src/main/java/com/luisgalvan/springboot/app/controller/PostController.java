@@ -16,6 +16,7 @@ import static org.springframework.http.HttpStatus.*;
 @RestController
 @RequestMapping("/api/posts")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 public class PostController {
 
     private final PostService postService;
@@ -41,7 +42,7 @@ public class PostController {
         return ResponseEntity.status(OK).body(postService.getPostsBySubreddit(id));
     }
 
-    @GetMapping("/by-user/{name}")
+    @GetMapping("/by-user/{username}")
     public ResponseEntity<List<PostResponse>> getPostsByUsername(@PathVariable String username){
         return ResponseEntity.status(OK).body(postService.getPostsByUsername(username));
     }
