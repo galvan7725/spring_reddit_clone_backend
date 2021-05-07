@@ -11,7 +11,6 @@ import com.luisgalvan.springboot.app.model.User;
 import com.luisgalvan.springboot.app.repository.PostRepository;
 import com.luisgalvan.springboot.app.repository.SubredditRepository;
 import com.luisgalvan.springboot.app.repository.UserRepository;
-import javafx.geometry.Pos;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
