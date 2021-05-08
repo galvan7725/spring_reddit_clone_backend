@@ -11,8 +11,9 @@
 	<groupId>com.luisgalvan.springboot.data.app</groupId>
 	<artifactId>redditClone</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>redditClone</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring reddit clone</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
